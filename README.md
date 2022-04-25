@@ -1,10 +1,9 @@
-## Puget Sound Currents
+## Puget Sound Surface Currents
 
-Built for sailors: [today's current conditions in Puget Sound, as well as a 3-day forecast](docs/todays-images.html).
+### LiveOcean's prediction for today:
 
-Test table:
-
-:-: | :-:
+col 1 | col 2
+:-----: | :-----:
 abc | def
 ghi | jkl
 ABC | DEF
