@@ -2,8 +2,8 @@
 
 ### LiveOcean's prediction for today:
 
-| hour  |   | Pacfic time zone |
-| :-------: | :-------: | :-------: | 
+|           | Pacfic time zone |           |
+| :-------: | :--------------: | :-------: | 
 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0014.png)](data/latest-LO/img/plot_0014.png)<br>06:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0015.png)](data/latest-LO/img/plot_0015.png)<br>07:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0016.png)](data/latest-LO/img/plot_0016.png)<br>08:00 |
 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0017.png)](data/latest-LO/img/plot_0017.png)<br>09:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0018.png)](data/latest-LO/img/plot_0018.png)<br>10:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0019.png)](data/latest-LO/img/plot_0019.png)<br>11:00 |
 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0020.png)](data/latest-LO/img/plot_0020.png)<br>12:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0021.png)](data/latest-LO/img/plot_0021.png)<br>13:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0022.png)](data/latest-LO/img/plot_0022.png)<br>14:00 |
