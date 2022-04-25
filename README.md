@@ -2,8 +2,10 @@
 
 Built for sailors: [today's current conditions in Puget Sound, as well as a 3-day forecast](docs/todays-images.html).
 
-[![LiveOcean surface currents](data/latest-LO/thumbs/plot_0001.png)](data/latest-LO/image/plot_0001.png)
-[![LiveOcean surface currents](data/latest-LO/thumbs/plot_0002.png)](data/latest-LO/image/plot_0002.png)
+
+| [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0014.png)](data/latest-LO/img/plot_0014.png) | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0015.png)](data/latest-LO/img/plot_0015.png) | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0016.png)](data/latest-LO/img/plot_0016.png) |
+| [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0017.png)](data/latest-LO/img/plot_0017.png) | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0018.png)](data/latest-LO/img/plot_0018.png) | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0019.png)](data/latest-LO/img/plot_0019.png) |
+
 
 The [University of Washington's LiveOcean model](https://faculty.washington.edu/pmacc/LO/LiveOcean.html) is the source for this free data product generated with open source code. Thanks to physical oceanography professor, Dr. Parker MacCready and his partners, for this resource.
 
