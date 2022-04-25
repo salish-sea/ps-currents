@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Puget Sound Currents
 
-You can use the [editor on GitHub](https://github.com/salish-sea/ps-currents/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Built for sailors: today's current conditions in Puget Sound, as well as a 3-day forecast.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The [University of Washington's LiveOcean model](https://faculty.washington.edu/pmacc/LO/LiveOcean.html) is the source for this free data product generated with open source code. Thanks to physical oceanography professor, Dr. Parker MacCready and his partners, for this resource.
 
-### Markdown
+### Motivation and methods
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This site presents hourly estimates of the surface currents in Puget Sound for the most recent day and the next two days. During a training session for the [Race to Alaska](https://r2ak.com), we enjoyed using LiveOcean's daily movie of currents. When you don't have an engine on your boat and instead are relying on human power to move around the Salish Sea, the surface currents really matter!
 
-```markdown
-Syntax highlighted code block
+The movie format, however, was difficult to use when trying to understand the "current currents" -- the conditions near your human-powered sailboat during a specific hour. Especially on mobile phones, it was difficult to stop the mp4 at the right frame, and we found no easy way to toggle between adjacent hours. Go ahead, try it with the [latest LiveOcean surface current movie](https://faculty.washington.edu/pmacc/LO/p5_PS_speed_top.html).
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/salish-sea/ps-currents/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Our solution is to use the free, open source tool [ffmpeg](https://ffmpeg.org/) in a simple [Python](https://www.python.org/) script to break the mp4 into separate .png files, one for each hour of modeled currents. Then we present those images so that they are easy to view and/or download to your phone or whatever other system you use as a sailor or tactician. Along the way, we archive the images for folks who might want to easily go back in time and study past current conditions, or make a movie of currents during some historical period.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Have questions? Email veirs@uw.edu or open an issue in the main branch of the [ps-currents repository](https://github.com/salish-sea/ps-currents).
