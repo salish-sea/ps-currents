@@ -1,6 +1,6 @@
 ## Puget Sound Currents
 
-Built for sailors: [today's current conditions in Puget Sound, as well as a 3-day forecast.i](data/latest-LO)
+Built for sailors: [today's current conditions in Puget Sound, as well as a 3-day forecast](data/latest-LO).
 
 The [University of Washington's LiveOcean model](https://faculty.washington.edu/pmacc/LO/LiveOcean.html) is the source for this free data product generated with open source code. Thanks to physical oceanography professor, Dr. Parker MacCready and his partners, for this resource.
 
