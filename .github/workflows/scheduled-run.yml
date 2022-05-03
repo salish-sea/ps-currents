@@ -1,0 +1,14 @@
+#.github/workflows/scheduled-run.yml
+
+name:  Run daily-update.py once each day after the 6 am liveocean build
+
+on:
+  schedule:
+    - cron: '0, 15, 30, 45 * * * *'   # run cron job at min hr * * *
+jobs:
+  build:
+    name:  Trigger liveocean update
+    runs-on: Ubuntu-latest
+    steps:
+      - name:  python run
+        run: python code/daily-update.py
