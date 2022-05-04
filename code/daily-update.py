@@ -2,7 +2,7 @@
 #
 # Get the latest movie of modeled currents from LiveOcean and decompose it into hourly images
 #
-# Created 4/24/2022 by scottveirs
+# Created 4/24/2022 by scottveirs and ammended by valveirs 5/3/2022
 
 
 from datetime import datetime
