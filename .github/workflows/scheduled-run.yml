@@ -4,11 +4,16 @@ name:  Run daily-update.py once each day after the 6 am liveocean build
 
 on:
   schedule:
-    - cron: '45 * * * *'   # run cron job at min hr * * *
+    - cron: '20 * * * *'   # run cron job at min hr * * *
 jobs:
   build:
     name:  Trigger liveocean update
     runs-on: Ubuntu-latest
     steps:
-      - name:  python run
-        run: python code/daily-update.py
+      - name:  setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: execute py script
+        run:
+          python daily-update.py
