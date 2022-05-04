@@ -4,7 +4,7 @@ name:  Run daily-update.py once each day after the 6 am liveocean build
 
 on:
   schedule:
-    - cron: '20 * * * *'   # run cron job at min hr * * *
+    - cron: '45 * * * *'   # run cron job at min hr * * *
 jobs:
   build:
     name:  Trigger liveocean update
