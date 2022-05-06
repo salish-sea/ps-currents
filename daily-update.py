@@ -29,7 +29,8 @@ print(f"filename_{date}")
 # Use Requests to download the latest model movie from the LiveOcean site
 # Store the mp4 in /data/latest-LO
 currentfile = "https://faculty.washington.edu/pmacc/LO/Figs_active_forecast/P1_PS_speed_top.mp4"
-#print(os.getcwd())
+print("Current working directory is", os.getcwd())
+print("ls is", os.listdir())
 r = requests.get(currentfile, allow_redirects=True)
 open('../data/latest-LO/P1_PS_speed_top.mp4', 'wb').write(r.content)
 
