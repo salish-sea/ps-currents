@@ -12,11 +12,13 @@ from PIL import Image
 
 def thumbnails(savedir, imgfile, scalefactor):
    try:
-      print(savedir, imgfile)
       image = Image.open(imgfile)
       image.thumbnail((image.height//scalefactor, image.width//scalefactor))
       thmfile = savedir + imgfile.split("/")[-1]
       image.save(thmfile)
+      print("----", savedir)
+      print(imgfile)
+      print(thmfile)
       # image1 = Image.open(thmfile)
       # image1.show()
    except IOError:
