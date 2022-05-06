@@ -14,18 +14,3 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
-      - name: install pip
-        run:
-          python -m pip install --upgrade pip
-      - name: install PIL
-        run:
-#          pip install -r requirements.txt
-          python -m pip install PIL
-      -name:  install requests
-        run: python -m pip install requests
-      - name: check out repository code
-        uses: actions/checkout@v2
-        
-      - name: execute py script
-        run:
-          python daily-update.py
