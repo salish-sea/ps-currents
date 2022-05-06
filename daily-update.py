@@ -39,7 +39,10 @@ open('{}/data/latest-LO/P1_PS_speed_top.mp4'.format(cwd), 'wb').write(r.content)
 
 os.system('ffmpeg -i {}/data/latest-LO/P1_PS_speed_top.mp4 -vf fps=8 {}/data/latest-LO/img/plot_%04d.png'.format(cwd, cwd))
 scalefactor = 3    # scalefactor = 2 give a more 'readable' thumbnail
-for file in os.listdir("{}/data/latest-LO/img/".format(cwd)):
+imgDir = "{}/data/latest-LO/img/".format(cwd)
+print(imgDir)
+for file in os.listdir(imgDir):
+    print(file)
     thumbnails("{}/data/latest-LO/thumbs/".format(cwd), "{}/data/latest-LO/img/".format(cwd) + file, 3)
 
 # Store the output in /data/latest-LO
