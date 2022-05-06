@@ -20,7 +20,7 @@ jobs:
       - name: install requirements
         run:
 #          pip install -r requirements.txt
-#         python -m pip install PIL
+          python -m pip install PIL
           python -m pip install requests
         working-directory: ./
       - name: check out repository code
