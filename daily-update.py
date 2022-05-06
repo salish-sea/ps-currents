@@ -33,14 +33,14 @@ currentfile = "https://faculty.washington.edu/pmacc/LO/Figs_active_forecast/P1_P
 print("Current working directory is", cwd)
 print("ls is", os.listdir())
 r = requests.get(currentfile, allow_redirects=True)
-open('{cwd}/data/latest-LO/P1_PS_speed_top.mp4', 'wb').write(r.content)
+open('{}/data/latest-LO/P1_PS_speed_top.mp4'.format(cwd), 'wb').write(r.content)
 
 # Use ffmpeg to extract frames from each hour as individual image files
 
-os.system('ffmpeg -i {cwd}/data/latest-LO/P1_PS_speed_top.mp4 -vf fps=8 {cwd}/data/latest-LO/img/plot_%04d.png')
+os.system('ffmpeg -i {}/data/latest-LO/P1_PS_speed_top.mp4 -vf fps=8 {}/data/latest-LO/img/plot_%04d.png'.format(cwd, cwd))
 scalefactor = 3    # scalefactor = 2 give a more 'readable' thumbnail
-for file in os.listdir("{cwd}/data/latest-LO/img/"):
-    thumbnails("{cwd}/data/latest-LO/thumbs/", "{cwd}/data/latest-LO/img/" + file, 3)
+for file in os.listdir("{}/data/latest-LO/img/".format(cwd)):
+    thumbnails("{}/data/latest-LO/thumbs/".format(cwd), "{}/data/latest-LO/img/".format(cwd) + file, 3)
 
 # Store the output in /data/latest-LO
 
