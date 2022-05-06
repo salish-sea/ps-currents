@@ -17,9 +17,9 @@ jobs:
       - name: install pip
         run:
           python -m pip install --upgrade pip
-      - name: install PIL
+      - name: install pillow
         run:
-          python -m pip install PIL
+          python -m pip install pillow
       - name: check out repository code
         uses: actions/checkout@v2
       - name: execute py script
