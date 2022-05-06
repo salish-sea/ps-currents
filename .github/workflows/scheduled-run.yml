@@ -18,7 +18,7 @@ jobs:
         uses:
           - py-actions/py-dependency-install@v3
         with:
-          - path: requirements.txt
+          path: requirements.txt
       - name: check out repository code
         uses: actions/checkout@v2
         
