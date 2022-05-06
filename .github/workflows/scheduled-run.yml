@@ -22,7 +22,8 @@ jobs:
           echo "local path is $GITHUB_ENV"
       - name: install requirements
         run:
-          pip install -r "$GITHUB_ENV/requirements.txt"
+          pip install -r requirements.txt"
+        working-directory: ./
       - name: check out repository code
         uses: actions/checkout@v2
         
