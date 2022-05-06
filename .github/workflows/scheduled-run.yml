@@ -4,7 +4,7 @@ name:  Run daily-update.py once each day after the 6 am liveocean build
 
 on:
   schedule:
-    - cron: '45 * * * *'   # run cron job at min hr * * *
+    - cron: '15 * * * *'   # run cron job at min hr * * *
 jobs:
   build:
     name:  Trigger liveocean update
@@ -14,7 +14,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
-          
+      - name: Install Python dependencies
+        uses:
+          - py-actions/py-dependency-install@v3
+        with:
+          - path: requirements.txt
       - name: check out repository code
         uses: actions/checkout@v2
         
