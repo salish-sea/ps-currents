@@ -17,12 +17,11 @@ jobs:
       - name: install pip
         run:
           python -m pip install --upgrade pip
-      - name: path
-        run:
-          echo "local path is $GITHUB_ENV"
       - name: install requirements
         run:
-          pip install -r requirements.txt
+#          pip install -r requirements.txt
+          python -m pip install PIL
+          python -m pip install request
         working-directory: ./
       - name: check out repository code
         uses: actions/checkout@v2
