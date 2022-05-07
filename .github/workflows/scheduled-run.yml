@@ -31,3 +31,4 @@ jobs:
       - name: execute py script
         run:
           python daily-update.py
+      - uses: stefanzweifel/git-auto-commit-action@v4
