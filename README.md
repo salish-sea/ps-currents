@@ -1,5 +1,8 @@
 ## Puget Sound Surface Currents
 
+[Test link to hello.html](hello.html)
+[Test link to doc dir](doc)
+
 ### LiveOcean's prediction for today:
 
 |                                                                                                                 |                                                Pacfic time zone                                                 |                                                                                                                 |
