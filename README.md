@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>LiveOcean hourly display</title>
+		<title>LiveOcean hourly display VV</title>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
