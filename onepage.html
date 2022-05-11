@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>LiveOcean hourly display VV</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="{{ base.url | prepend: site.url }}/css/style.css">
 </head>
 <body>
 <div class="slider">
 <div class="img-box">
-<img src="data/latest_LO/img/plot_0001.png" class="slider-img">
+<img src="{{ base.url | prepend: site.url }}/data/latest_LO/img/plot_0001.png" class="slider-img">
 </div>
 <button class="btn" onclick="prev()">Prev</button>
 <button class="btn" onclick="next()">Next</button>
 </div>
-<script src="js/main.js"></script>
+<script src="{{ base.url | prepend: site.url }}/js/main.js"></script>
 </body>
 </html>
