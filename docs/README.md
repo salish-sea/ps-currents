@@ -1,7 +1,7 @@
 ## Puget Sound Surface Currents
 
-[Test link to data](../data)
-[Test link to local test.html](test.html)
+[Test link to data](data)
+[Test link to local test.html](docs/test.html)
 
 ### LiveOcean's prediction for today:
 
