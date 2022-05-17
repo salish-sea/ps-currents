@@ -52,7 +52,7 @@ for file in os.listdir(imgDir):
 
 # Delete source animation file (mp4)
 # os.system('rm docs/data/latest-LO/P1_PS_speed_top.mp4')
-os.remove('docs/data/latest-LO/P1_PS_speed_top.mp4')
+# os.remove('docs/data/latest-LO/P1_PS_speed_top.mp4')
 
 
 
