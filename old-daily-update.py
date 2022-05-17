@@ -35,24 +35,27 @@ print(f"filename_{date}")
 
 # Use Requests to download the latest model movie from the LiveOcean site
 # Store the mp4 in /data/latest-LO
+cwd = os.getcwd()
 currentfile = "https://faculty.washington.edu/pmacc/LO/Figs_active_forecast/P1_PS_speed_top.mp4"
+print("Current working directory is", cwd)
+print("ls is", os.listdir())
 r = requests.get(currentfile, allow_redirects=True)
-open('docs/data/latest-LO/P1_PS_speed_top.mp4', 'wb').write(r.content)
+open('{}/docs/data/latest-LO/P1_PS_speed_top.mp4'.format(cwd), 'wb').write(r.content)
 
 # Use ffmpeg to extract frames from each hour as individual image files
 # and store the output in /data/latest-LO
 
-os.system('ffmpeg -i docs/data/latest-LO/P1_PS_speed_top.mp4 -vf fps=8 docs/data/latest-LO/img/plot_%04d.png')
+os.system('ffmpeg -i {}/docs/data/latest-LO/P1_PS_speed_top.mp4 -vf fps=8 {}/doc/data/latest-LO/img/plot_%04d.png'.format(cwd, cwd))
 scalefactor = 3    # scalefactor = 2 give a more 'readable' thumbnail
-imgDir = "docs/data/latest-LO/img/"
+imgDir = "{}/docs/data/latest-LO/img/".format(cwd)
 print(imgDir)
 for file in os.listdir(imgDir):
     print(file)
-    thumbnails("docs/data/latest-LO/thumbs/", "docs/data/latest-LO/img/" + file, 3)
+    thumbnails("{}/docs/data/latest-LO/thumbs/".format(cwd), "{}/docs/data/latest-LO/img/".format(cwd) + file, 3)
 
 # Delete source animation file (mp4)
-# os.system('rm docs/data/latest-LO/P1_PS_speed_top.mp4')
-os.remove('docs/data/latest-LO/P1_PS_speed_top.mp4')
+# os.system('rm {}/docs/data/latest-LO/P1_PS_speed_top.mp4'.format(cwd, cwd))
+os.remove('{}/docs/data/latest-LO/P1_PS_speed_top.mp4'.format(cwd, cwd))   
 
 
 
