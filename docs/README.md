@@ -1,9 +1,8 @@
 ## Puget Sound Surface Currents
 
-[Test link to data](data)
-[Test link to local test.html](test.html)
+Welcome to [salishsea.io/ps-currents](https://salishsea.io/ps-currents)
 
-### LiveOcean's prediction for today:
+### LiveOcean's prediction for today (06:00-17:00):
 
 |                                                                                                                 |                                                Pacfic time zone                                                 |                                                                                                                 |
 |:---------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:| 
