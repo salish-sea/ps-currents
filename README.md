@@ -1,20 +1,8 @@
 ## Puget Sound Surface Currents
 
-[Test link to hello.html](hello.html)
-[Test link to docs dir](docs)
+This repo generates a mobile friendly view of Puget Sound surface currents for sailors. A Github action runs daily to fetch the latest animation from the LiveOcean model and serves hourly forecasts for the day via Github Pages at [salish-sea.github.io/ps-currents](https://salish-sea.github.io/ps-currents/).
 
-### LiveOcean's prediction for today:
-
-|                                                                                                                 |                                                Pacfic time zone                                                 |                                                                                                                 |
-|:---------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:| 
-| [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0014.png)](data/latest-LO/img/plot_0014.png)<br>06:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0015.png)](data/latest-LO/img/plot_0015.png)<br>07:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0016.png)](data/latest-LO/img/plot_0016.png)<br>08:00 |
-| [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0017.png)](data/latest-LO/img/plot_0017.png)<br>09:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0018.png)](data/latest-LO/img/plot_0018.png)<br>10:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0019.png)](data/latest-LO/img/plot_0019.png)<br>11:00 |
-| [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0020.png)](data/latest-LO/img/plot_0020.png)<br>12:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0021.png)](data/latest-LO/img/plot_0021.png)<br>13:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0022.png)](data/latest-LO/img/plot_0022.png)<br>14:00 |
-| [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0023.png)](data/latest-LO/img/plot_0023.png)<br>15:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0024.png)](data/latest-LO/img/plot_0024.png)<br>16:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0025.png)](data/latest-LO/img/plot_0025.png)<br>17:00 |
-| [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0026.png)](data/latest-LO/img/plot_0026.png)<br>15:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0026.png)](data/latest-LO/img/plot_0026.png)<br>16:00 | [![LiveOcean surface currents](data/latest-LO/thumbs/plot_0027.png)](data/latest-LO/img/plot_0027.png)<br>17:00 |
-
-
-The [University of Washington's LiveOcean model](https://faculty.washington.edu/pmacc/LO/LiveOcean.html) is the source for this free data product generated with open source code. Thanks to physical oceanography professor, Dr. Parker MacCready and his partners, for this resource.
+The [University of Washington's LiveOcean model](https://faculty.washington.edu/pmacc/LO/LiveOcean.html) is the source for this free data product generated with open source code. Thanks to physical oceanography professor, Dr. Parker MacCready and his partners, for this amazing resource!
 
 ### Motivation and methods
 
