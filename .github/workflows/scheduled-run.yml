@@ -2,15 +2,19 @@
 
 name:  Run daily-update.py once each day after the 6 am liveocean build
 
-on: [push]
-  # schedule:
-  #  - cron: '0 15 * * *'   # run cron job at 8 am local/Pacific via cron format -- min hr * * *  e.g. 7 am every day = 0 14 * * *  GMT -7
+on: 
+  push:
+    branches:
+      - main
+  schedule:
+    ## run cron job at 8 am local/Pacific
+    - cron: '0 15 * * *'   
 jobs:
   build:
-    name:  Trigger liveocean update
+    name: Trigger liveocean update
     runs-on: Ubuntu-latest
     steps:
-      - name:  setup python
+      - name: setup python
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
@@ -31,4 +35,4 @@ jobs:
       - name: execute py script
         run:
           python daily-update.py
-      - uses: stefanzweifel/git-auto-commit-action@v4
+##    - uses: stefanzweifel/git-auto-commit-action@v4
