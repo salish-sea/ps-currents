@@ -1,6 +1,6 @@
 ## Puget Sound Surface Currents
 
-This repo generates a mobile friendly view of Puget Sound surface currents for sailors. A Github action runs daily to fetch the latest animation from the LiveOcean model and serves hourly forecasts for the day via Github Pages at [salish-sea.github.io/ps-currents](https://salish-sea.github.io/ps-currents/).
+This repo generates a mobile friendly view of Puget Sound surface currents for sailors. A Github action runs daily to fetch the latest animation from the LiveOcean model and serves hourly forecasts for the day via Github Pages at [salish-sea.github.io/ps-currents](https://salish-sea.github.io/ps-currents/) which is also mapped to [salishsea.io/ps-currents](https://salishsea.io/ps-currents).
 
 The [University of Washington's LiveOcean model](https://faculty.washington.edu/pmacc/LO/LiveOcean.html) is the source for this free data product generated with open source code. Thanks to physical oceanography professor, Dr. Parker MacCready and his partners, for this amazing resource!
 
